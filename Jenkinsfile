@@ -83,9 +83,9 @@ pipeline {
               }		 
 	       steps {
                     sh 'docker version'
-                    sh 'docker build -t devopswithdeepak-docker-webapp-demo .'
+                    sh 'docker build -t palash-docker-webapp-demo .'
                     sh 'docker image list'
-                    sh 'docker tag devopswithdeepak-docker-webapp-demo deepak2717/devopswithdeepak-docker-webapp-demo:v5.0'
+                    sh 'docker tag palash-docker-webapp-demo palash9422/palash-docker-webapp-demo:v5.0'
 		
                }
           }
@@ -109,7 +109,7 @@ pipeline {
                 }
               }		 
                steps {
-                     sh 'docker push  deepak2717/devopswithdeepak-docker-webapp-demo:v5.0'
+                     sh 'docker push  palash9422/palash-docker-webapp-demo:v5.0'
                 }
          }
          stage('Plan') {
