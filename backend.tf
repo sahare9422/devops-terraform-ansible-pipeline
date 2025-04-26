@@ -2,7 +2,7 @@
 
 terraform {
   backend "s3" {
-    bucket = "palash-kops-testbkt123.k8s.local"
+    bucket = "capston-bucket-palash"
     key    = "project/remote.tfstate"
     region = "us-east-1"
   }
