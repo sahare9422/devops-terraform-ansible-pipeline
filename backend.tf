@@ -2,7 +2,7 @@
 
 terraform {
   backend "s3" {
-    bucket = "demo-cpastone-project"
+    bucket = "palash-kops-testbkt123.k8s.local"
     key    = "project/remote.tfstate"
     region = "us-east-1"
   }
