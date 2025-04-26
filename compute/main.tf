@@ -19,7 +19,7 @@ data "aws_ami" "linux" {
 resource "aws_launch_template" "web-batch891" {
   name_prefix            = "web-batch891"
   image_id               = data.aws_ami.linux.id
-  key_name               = "batch-910"
+  key_name               = "newus"
   instance_type          = var.web_instance_type
   vpc_security_group_ids = [var.web_sg]
   user_data              = filebase64("install_apache.sh")
